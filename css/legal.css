@@ -1,0 +1,97 @@
+/* 法律页面样式 */
+
+.legal-page {
+  padding: var(--spacing-20) 0;
+  min-height: calc(100vh - 80px - 300px); /* 减去导航栏和 Footer 高度 */
+}
+
+.legal-page .container {
+  max-width: 800px;
+}
+
+.legal-page h1 {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-4);
+}
+
+.legal-page .last-updated {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  margin-bottom: var(--spacing-12);
+  padding-bottom: var(--spacing-6);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.legal-page section {
+  margin-bottom: var(--spacing-12);
+}
+
+.legal-page h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-4);
+  margin-top: var(--spacing-8);
+}
+
+.legal-page h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-3);
+  margin-top: var(--spacing-6);
+}
+
+.legal-page p {
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--spacing-4);
+}
+
+.legal-page ul {
+  list-style: disc;
+  padding-left: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
+}
+
+.legal-page li {
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--spacing-2);
+}
+
+.legal-page a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.legal-page a:hover {
+  color: var(--primary-hover);
+}
+
+.legal-page strong {
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+}
+
+/* 响应式设计 */
+@media (max-width: 640px) {
+  .legal-page {
+    padding: var(--spacing-12) 0;
+  }
+
+  .legal-page h1 {
+    font-size: var(--text-3xl);
+  }
+
+  .legal-page h2 {
+    font-size: var(--text-xl);
+  }
+
+  .legal-page h3 {
+    font-size: var(--text-lg);
+  }
+}

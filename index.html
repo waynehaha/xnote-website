@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XNote - 为 Twitter 用户添加备注，更好地管理你的社交关系">
+  <meta name="keywords" content="Twitter, 备注, 标签, Chrome 插件, 浏览器扩展">
+  <meta name="author" content="XNote Team">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="XNote - Twitter 用户备注工具">
+  <meta property="og:description" content="为 Twitter 用户添加备注，更好地管理你的社交关系">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@w736823064">
+  <meta name="twitter:title" content="XNote - Twitter 用户备注工具">
+  <meta name="twitter:description" content="为 Twitter 用户添加备注，更好地管理你的社交关系">
+  
+  <title>XNote - Twitter 用户备注工具</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="images/logo.png" alt="XNote Logo">
+        <span>XNote</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">功能</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">定价</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="https://x.com/w736823064" target="_blank" rel="noopener">X</a></li>
+        <li class="language-switcher-item">
+          <select id="lang-select" class="language-switcher" aria-label="选择语言">
+            <option value="en">English</option>
+            <option value="zh-CN">简体中文</option>
+            <option value="zh-TW">繁體中文</option>
+          </select>
+        </li>
+      </ul>
+      
+      <button class="mobile-menu-toggle" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge" data-i18n="hero.badge">即将推出</div>
+        <h1 data-i18n="hero.title">XNote</h1>
+        <p class="tagline" data-i18n="hero.tagline">为 Twitter 用户添加备注，更好地管理你的社交关系</p>
+        <p class="description" data-i18n="hero.description">轻松为任何 Twitter 用户添加个人备注、标签和分组，让你的社交网络井井有条。</p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary" data-i18n="hero.cta_wait" disabled>敬请期待</button>
+          <a href="#features" class="btn btn-secondary" data-i18n="hero.cta_learn">了解更多</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="placeholder-image">
+          <svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="600" height="400" fill="#F3F4F6"/>
+            <text x="300" y="200" text-anchor="middle" fill="#9CA3AF" font-size="24" font-family="Arial">产品截图占位符</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 data-i18n="features.title">核心功能</h2>
+      <p class="section-subtitle" data-i18n="features.subtitle">强大而简单的功能，让你的 Twitter 体验更上一层楼</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3 data-i18n="features.note.title">用户备注</h3>
+          <p data-i18n="features.note.description">为任意 Twitter 用户添加自定义备注、别名或标签，再也不会忘记重要的人</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏷️</div>
+          <h3 data-i18n="features.tag.title">标签分组</h3>
+          <p data-i18n="features.tag.description">创建分组，使用颜色标记不同类型的用户，让你的关注列表井然有序</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3 data-i18n="features.search.title">快速搜索</h3>
+          <p data-i18n="features.search.description">通过备注内容快速查找用户，即使记不住用户名也能轻松找到</p>
+        </div>
+        <div class="feature-card pro">
+          <div class="feature-icon">☁️</div>
+          <h3 data-i18n="features.sync.title">云端同步</h3>
+          <span class="pro-badge" data-i18n="features.sync.badge">Pro</span>
+          <p data-i18n="features.sync.description">通过 WebDAV 实现多设备数据同步，随时随地访问你的备注</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 data-i18n="pricing.title">选择适合你的方案</h2>
+      <p class="section-subtitle" data-i18n="pricing.subtitle">从免费版开始，随时升级到 Pro 版解锁更多功能</p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3 data-i18n="pricing.free.name">免费版</h3>
+          <div class="price">
+            <span class="amount" data-i18n="pricing.free.price">$0</span>
+            <span class="period" data-i18n="pricing.free.period">/永久</span>
+          </div>
+          <ul class="features-list">
+            <li><span class="check">✓</span> <span data-i18n="pricing.free.feature1">最多 120 条备注</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.free.feature2">无限分组</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.free.feature3">本地存储</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.free.feature4">基础搜索</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.free.feature5">导出 60 条</span></li>
+          </ul>
+          <button class="btn btn-outline" data-i18n="pricing.free.cta" disabled>敬请期待</button>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="recommended-badge" data-i18n="pricing.pro.badge">推荐</div>
+          <h3 data-i18n="pricing.pro.name">Pro 版</h3>
+          <div class="price">
+            <span class="amount" data-i18n="pricing.pro.price">$2.99</span>
+            <span class="period" data-i18n="pricing.pro.period">/月</span>
+          </div>
+          <ul class="features-list">
+            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature1">无限备注</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature2">无限分组</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature3">云端同步</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature4">高级搜索</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature5">完整导出</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature6">批量操作</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature7">备注历史</span></li>
+          </ul>
+          <button class="btn btn-primary" data-i18n="pricing.pro.cta" disabled>敬请期待</button>
+          <p class="pricing-note" data-i18n="pricing.pro.note">年付 $29.99（节省 17%）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 data-i18n="faq.title">常见问题</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q1.question">XNote 什么时候发布？</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q1.answer">我们正在积极开发中，敬请期待。您可以通过邮箱 w736823064@gmail.com 或关注我的 X 账号 @w736823064 获取最新进展。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q2.question">免费版和 Pro 版有什么区别？</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q2.answer">免费版提供最多 120 条备注和无限分组功能，适合大多数用户。Pro 版解除所有限制，并提供云端同步、高级搜索、批量操作等高级功能。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q3.question">我的数据安全吗？</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q3.answer">是的。免费版数据存储在您的本地浏览器中，我们无法访问。Pro 版使用 WebDAV 协议进行云端同步，您可以选择自己信任的服务提供商（如坚果云、Nextcloud 等）。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q4.question">支持哪些浏览器？</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q4.answer">目前支持 Chrome 浏览器。我们计划在未来支持 Firefox 和其他基于 Chromium 的浏览器（如 Edge、Brave 等）。</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q5.question">如何联系开发者？</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q5.answer">您可以通过邮箱 w736823064@gmail.com 联系我，或在 X 上关注 @w736823064。我会尽快回复您的问题和建议。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="XNote" style="width: 48px; height: 48px; margin-bottom: 12px;">
+          <p data-i18n="footer.tagline">为 Twitter 用户添加备注</p>
+        </div>
+        
+        <div class="link-group">
+          <h4 data-i18n="footer.product">产品</h4>
+          <ul>
+            <li><a href="#features" data-i18n="nav.features">功能</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">定价</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="link-group">
+          <h4 data-i18n="footer.legal">法律</h4>
+          <ul>
+            <li><a href="privacy.html" data-i18n="footer.privacy">隐私政策</a></li>
+            <li><a href="terms.html" data-i18n="footer.terms">服务条款</a></li>
+          </ul>
+        </div>
+        
+        <div class="link-group">
+          <h4 data-i18n="footer.contact">联系</h4>
+          <ul>
+            <li><a href="mailto:w736823064@gmail.com" data-i18n="footer.email">邮箱</a></li>
+            <li><a href="https://x.com/w736823064" target="_blank" rel="noopener">X (Twitter)</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2024 XNote. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "XNote",
+    "applicationCategory": "BrowserExtension",
+    "operatingSystem": "Chrome",
+    "description": "为 Twitter 用户添加备注，更好地管理你的社交关系",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "name": "免费版"
+      },
+      {
+        "@type": "Offer",
+        "price": "2.99",
+        "priceCurrency": "USD",
+        "name": "Pro 版 - 月付"
+      },
+      {
+        "@type": "Offer",
+        "price": "29.99",
+        "priceCurrency": "USD",
+        "name": "Pro 版 - 年付"
+      }
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "XNote Team",
+      "url": "https://x.com/w736823064"
+    }
+  }
+  </script>
+
+  <!-- JavaScript -->
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.umd.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
