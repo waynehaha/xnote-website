@@ -118,7 +118,7 @@ const translations = {
       'privacy': 'Privacy Policy',
       'terms': 'Terms of Service',
       'email': 'Email',
-      'copyright': '© 2024 XNote. All rights reserved.'
+      'copyright': '© 2025 XNote. All rights reserved.'
     }
   },
   
@@ -236,7 +236,7 @@ const translations = {
       'privacy': '隐私政策',
       'terms': '服务条款',
       'email': '邮箱',
-      'copyright': '© 2024 XNote. 保留所有权利。'
+      'copyright': '© 2025 XNote. 保留所有权利。'
     }
   },
   
@@ -354,7 +354,7 @@ const translations = {
       'privacy': '隱私政策',
       'terms': '服務條款',
       'email': '郵箱',
-      'copyright': '© 2024 XNote. 保留所有權利。'
+      'copyright': '© 2025 XNote. 保留所有權利。'
     }
   }
 };
