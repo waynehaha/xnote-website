@@ -21,3 +21,4 @@ test-*.html
 # 部署相关
 .env
 .env.local
+src/
