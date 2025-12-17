@@ -100,6 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
+  // 上一张截图
+  function prevScreenshot() {
+    const prevIndex = (currentIndex - 1 + screenshots.length) % screenshots.length;
+    showScreenshot(prevIndex);
+  }
+  
   // 点击指示点切换
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
@@ -108,6 +114,26 @@ document.addEventListener('DOMContentLoaded', () => {
       startAutoPlay(); // 重新开始自动播放
     });
   });
+  
+  // 左右箭头按钮
+  const arrowLeft = document.querySelector('.arrow-left');
+  const arrowRight = document.querySelector('.arrow-right');
+  
+  if (arrowLeft) {
+    arrowLeft.addEventListener('click', () => {
+      stopAutoPlay();
+      prevScreenshot();
+      startAutoPlay();
+    });
+  }
+  
+  if (arrowRight) {
+    arrowRight.addEventListener('click', () => {
+      stopAutoPlay();
+      nextScreenshot();
+      startAutoPlay();
+    });
+  }
   
   // 鼠标悬停时暂停自动播放
   const screenshotsContainer = document.querySelector('.product-screenshots');
