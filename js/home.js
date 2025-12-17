@@ -45,9 +45,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const dots = document.querySelectorAll('.screenshot-dots .dot');
   let currentIndex = 0;
   let autoPlayInterval;
+  let isTransitioning = false; // 防止切换过程中重复触发
+  
+  // 预加载所有图片
+  screenshots.forEach(img => {
+    if (!img.complete) {
+      img.addEventListener('load', () => {
+        console.log('图片加载完成:', img.src);
+      });
+    }
+  });
   
   // 切换到指定截图
   function showScreenshot(index) {
+    if (isTransitioning) return; // 如果正在切换，跳过
+    
+    isTransitioning = true;
+    
     // 移除所有 active 类
     screenshots.forEach(img => img.classList.remove('active'));
     dots.forEach(dot => dot.classList.remove('active'));
@@ -56,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
     screenshots[index].classList.add('active');
     dots[index].classList.add('active');
     currentIndex = index;
+    
+    // 等待动画完成后重置标志
+    setTimeout(() => {
+      isTransitioning = false;
+    }, 600); // 略大于CSS动画时长(0.5s)
   }
   
   // 下一张截图
@@ -66,12 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 自动播放
   function startAutoPlay() {
+    // 清除可能存在的旧定时器
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+    }
     autoPlayInterval = setInterval(nextScreenshot, 5000); // 每5秒切换
   }
   
   // 停止自动播放
   function stopAutoPlay() {
-    clearInterval(autoPlayInterval);
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+    }
   }
   
   // 点击指示点切换
