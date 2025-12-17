@@ -58,17 +58,28 @@
   position: relative;
   width: 100%;
   max-width: 600px;
+  height: 400px; /* 固定高度，防止切换时跳动 */
   border-radius: var(--radius-2xl);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-screenshots .screenshot {
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
   display: none;
   border-radius: var(--radius-2xl);
+  object-fit: contain; /* 保持图片比例 */
 }
 
 .product-screenshots .screenshot.active {
@@ -443,6 +454,25 @@
   
   .cta-buttons .btn {
     width: 100%;
+  }
+  
+  /* 移动端截图容器高度调整 */
+  .product-screenshots {
+    height: 300px;
+  }
+  
+  /* 移动端箭头按钮调整 */
+  .screenshot-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow-left {
+    left: 10px;
+  }
+  
+  .arrow-right {
+    right: 10px;
   }
   
   .features-grid {
