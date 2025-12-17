@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 自动播放
   function startAutoPlay() {
-    autoPlayInterval = setInterval(nextScreenshot, 3000); // 每3秒切换
+    autoPlayInterval = setInterval(nextScreenshot, 5000); // 每5秒切换
   }
   
   // 停止自动播放
