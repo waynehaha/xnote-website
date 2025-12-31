@@ -89,7 +89,7 @@ const translations = {
       'title': 'FAQ',
       'q1': {
         'question': 'When will XNote be released?',
-        'answer': 'We are actively developing. You can get the latest updates via email w736823064@gmail.com or follow my X account @w736823064.'
+        'answer': 'We are actively developing. You can get the latest updates via email tingwei@tingwei.site or follow my X account @w736823064.'
       },
       'q2': {
         'question': 'What is the difference between Free and Pro versions?',
@@ -105,7 +105,7 @@ const translations = {
       },
       'q5': {
         'question': 'How to contact the developer?',
-        'answer': 'You can contact me via email w736823064@gmail.com or follow @w736823064 on X. I will reply to your questions and suggestions as soon as possible.'
+        'answer': 'You can contact me via email tingwei@tingwei.site or follow @w736823064 on X. I will reply to your questions and suggestions as soon as possible.'
       }
     },
     
@@ -207,7 +207,7 @@ const translations = {
       'title': '常见问题',
       'q1': {
         'question': 'XNote 什么时候发布？',
-        'answer': '我们正在积极开发中，敬请期待。您可以通过邮箱 w736823064@gmail.com 或关注我的 X 账号 @w736823064 获取最新进展。'
+        'answer': '我们正在积极开发中，敬请期待。您可以通过邮箱 tingwei@tingwei.site 或关注我的 X 账号 @w736823064 获取最新进展。'
       },
       'q2': {
         'question': '免费版和 Pro 版有什么区别？',
@@ -223,7 +223,7 @@ const translations = {
       },
       'q5': {
         'question': '如何联系开发者？',
-        'answer': '您可以通过邮箱 w736823064@gmail.com 联系我，或在 X 上关注 @w736823064。我会尽快回复您的问题和建议。'
+        'answer': '您可以通过邮箱 tingwei@tingwei.site 联系我，或在 X 上关注 @w736823064。我会尽快回复您的问题和建议。'
       }
     },
     
@@ -325,7 +325,7 @@ const translations = {
       'title': '常見問題',
       'q1': {
         'question': 'XNote 什麼時候發布？',
-        'answer': '我們正在積極開發中，敬請期待。您可以通過郵箱 w736823064@gmail.com 或關注我的 X 賬號 @w736823064 獲取最新進展。'
+        'answer': '我們正在積極開發中，敬請期待。您可以通過郵箱 tingwei@tingwei.site 或關注我的 X 賬號 @w736823064 獲取最新進展。'
       },
       'q2': {
         'question': '免費版和 Pro 版有什麼區別？',
@@ -341,7 +341,7 @@ const translations = {
       },
       'q5': {
         'question': '如何聯繫開發者？',
-        'answer': '您可以通過郵箱 w736823064@gmail.com 聯繫我，或在 X 上關注 @w736823064。我會盡快回復您的問題和建議。'
+        'answer': '您可以通過郵箱 tingwei@tingwei.site 聯繫我，或在 X 上關注 @w736823064。我會盡快回復您的問題和建議。'
       }
     },
     
