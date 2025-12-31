@@ -70,7 +70,7 @@ const translations = {
       'pro': {
         'name': 'Pro',
         'badge': 'Recommended',
-        'price': '$2.99',
+        'price': '$4.50',
         'period': '/month',
         'feature1': 'Unlimited notes',
         'feature2': 'Unlimited groups',
@@ -188,7 +188,7 @@ const translations = {
       'pro': {
         'name': 'Pro 版',
         'badge': '推荐',
-        'price': '$2.99',
+        'price': '$4.50',
         'period': '/月',
         'feature1': '无限备注',
         'feature2': '无限分组',
@@ -306,7 +306,7 @@ const translations = {
       'pro': {
         'name': 'Pro 版',
         'badge': '推薦',
-        'price': '$2.99',
+        'price': '$4.50',
         'period': '/月',
         'feature1': '無限備註',
         'feature2': '無限分組',
