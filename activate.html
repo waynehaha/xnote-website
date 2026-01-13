@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XNote Pro 激活引导 - 获取您的 License Key 并激活">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>购买成功 - XNote</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    /* 激活页面专用样式 */
+    .activate-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .activate-hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--spacing-16) var(--spacing-6);
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    }
+
+    .activate-content {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--spacing-6);
+      box-shadow: 0 8px 24px rgba(34, 197, 94, 0.3);
+    }
+
+    .success-icon svg {
+      width: 40px;
+      height: 40px;
+      color: white;
+    }
+
+    .activate-title {
+      font-size: var(--text-3xl);
+      font-weight: var(--font-bold);
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-2);
+    }
+
+    .activate-subtitle {
+      font-size: var(--text-lg);
+      color: var(--text-secondary);
+      margin-bottom: var(--spacing-8);
+    }
+
+    .activate-card {
+      background: white;
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-8);
+      box-shadow: var(--shadow-lg);
+      text-align: left;
+      margin-bottom: var(--spacing-8);
+    }
+
+    .step-section {
+      margin-bottom: var(--spacing-6);
+    }
+
+    .step-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-3);
+      margin-bottom: var(--spacing-3);
+    }
+
+    .step-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary-light);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-xl);
+      flex-shrink: 0;
+    }
+
+    .step-title {
+      font-size: var(--text-lg);
+      font-weight: var(--font-semibold);
+      color: var(--text-primary);
+    }
+
+    .step-content {
+      padding-left: 52px;
+      color: var(--text-secondary);
+      font-size: var(--text-base);
+      line-height: 1.6;
+    }
+
+    .step-content p {
+      margin-bottom: var(--spacing-2);
+    }
+
+    .step-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-box {
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+      border-radius: var(--radius-md);
+      padding: var(--spacing-3) var(--spacing-4);
+      margin-top: var(--spacing-3);
+      font-size: var(--text-sm);
+      color: #92400e;
+    }
+
+    .email-example {
+      margin-top: var(--spacing-4);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .email-example img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .activate-steps {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-4);
+      margin-top: var(--spacing-3);
+    }
+
+    .activate-steps ol {
+      margin: 0;
+      padding-left: var(--spacing-5);
+    }
+
+    .activate-steps li {
+      margin-bottom: var(--spacing-2);
+      color: var(--text-secondary);
+    }
+
+    .activate-steps li:last-child {
+      margin-bottom: 0;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: var(--spacing-4);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons .btn {
+      min-width: 160px;
+    }
+
+    /* 联系信息（卡片内） */
+    .contact-inline {
+      margin-top: var(--spacing-6);
+      padding-top: var(--spacing-6);
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .contact-inline .contact-title {
+      font-size: var(--text-base);
+      font-weight: var(--font-semibold);
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-4);
+    }
+
+    .contact-inline .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: var(--spacing-6);
+      flex-wrap: wrap;
+    }
+
+    .contact-inline .contact-link {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-2);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: var(--text-sm);
+      transition: color var(--transition-fast);
+    }
+
+    .contact-inline .contact-link:hover {
+      color: var(--primary-color);
+    }
+
+    .contact-inline .contact-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* 联系信息（独立卡片，保留备用） */
+    .contact-section {
+      background: white;
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-6);
+      box-shadow: var(--shadow-md);
+      margin-bottom: var(--spacing-8);
+    }
+
+    .contact-title {
+      font-size: var(--text-base);
+      font-weight: var(--font-semibold);
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-4);
+      text-align: center;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: var(--spacing-6);
+      flex-wrap: wrap;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-2);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: var(--text-sm);
+      transition: color var(--transition-fast);
+    }
+
+    .contact-link:hover {
+      color: var(--primary-color);
+    }
+
+    .contact-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 640px) {
+      .activate-title {
+        font-size: var(--text-2xl);
+      }
+
+      .activate-card {
+        padding: var(--spacing-6);
+      }
+
+      .step-content {
+        padding-left: 0;
+        margin-top: var(--spacing-2);
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .cta-buttons .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="activate-page">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="images/logo.png" alt="XNote Logo">
+          <span>XNote</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="/#features" data-i18n="nav.features">功能</a></li>
+          <li><a href="/#pricing" data-i18n="nav.pricing">定价</a></li>
+          <li><a href="/#faq" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="https://x.com/w736823064" target="_blank" rel="noopener">X</a></li>
+          <li class="language-switcher-item">
+            <select id="lang-select" class="language-switcher" aria-label="选择语言">
+              <option value="en">English</option>
+              <option value="zh-CN">简体中文</option>
+              <option value="zh-TW">繁體中文</option>
+            </select>
+          </li>
+        </ul>
+
+        <button class="mobile-menu-toggle" aria-label="菜单">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <section class="activate-hero">
+      <div class="activate-content">
+        <!-- 成功图标 -->
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+
+        <h1 class="activate-title" data-i18n="activate.title">购买成功！</h1>
+        <p class="activate-subtitle" data-i18n="activate.subtitle">感谢您购买 XNote Pro，请按以下步骤激活</p>
+
+        <!-- 步骤卡片 -->
+        <div class="activate-card">
+          <!-- 步骤 1：获取 License Key -->
+          <div class="step-section">
+            <div class="step-header">
+              <div class="step-icon">📧</div>
+              <h2 class="step-title" data-i18n="activate.step1.title">获取 License Key</h2>
+            </div>
+            <div class="step-content">
+              <p data-i18n="activate.step1.desc1">您的 License Key 已发送到付款时使用的邮箱。</p>
+              <p data-i18n="activate.step1.desc2">请检查收件箱，发件人为 Creem.io。</p>
+              <div class="highlight-box">
+                <span data-i18n="activate.step1.tip">💡 如果没收到邮件，请检查垃圾邮件文件夹，或点击 Creem 支付页面的「查看订单」按钮。</span>
+              </div>
+              <!-- 邮件示例图 -->
+              <div class="email-example">
+                <img src="images/email-example.png" alt="License Key 邮件示例">
+              </div>
+            </div>
+          </div>
+
+          <!-- 步骤 2：激活扩展 -->
+          <div class="step-section">
+            <div class="step-header">
+              <div class="step-icon">🔑</div>
+              <h2 class="step-title" data-i18n="activate.step2.title">激活扩展</h2>
+            </div>
+            <div class="step-content">
+              <p data-i18n="activate.step2.desc">复制 License Key，按以下步骤激活：</p>
+              <div class="activate-steps">
+                <ol>
+                  <li data-i18n="activate.step2.s1">打开 Twitter/X 网站</li>
+                  <li data-i18n="activate.step2.s2">点击浏览器右上角的 XNote 扩展图标</li>
+                  <li data-i18n="activate.step2.s3">进入「数据管理」标签页</li>
+                  <li data-i18n="activate.step2.s4">在顶部输入 License Key，点击「激活」</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- 步骤 3：开始使用 -->
+          <div class="step-section">
+            <div class="step-header">
+              <div class="step-icon">🎉</div>
+              <h2 class="step-title" data-i18n="activate.step3.title">开始使用</h2>
+            </div>
+            <div class="step-content">
+              <p data-i18n="activate.step3.desc">激活成功后，您将解锁所有 Pro 功能：无限备注、完整导入导出等。</p>
+            </div>
+          </div>
+
+          <!-- 操作按钮 -->
+          <div class="cta-buttons" style="margin-top: var(--spacing-6); padding-top: var(--spacing-6); border-top: 1px solid var(--border-color);">
+            <a href="https://x.com" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="activate.cta.twitter">打开 Twitter</a>
+          </div>
+
+          <!-- 联系信息 -->
+          <div class="contact-inline">
+            <h3 class="contact-title" data-i18n="activate.contact.title">遇到问题？联系我们</h3>
+            <div class="contact-links">
+              <a href="mailto:tingwei@tingwei.site" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>tingwei@tingwei.site</span>
+              </a>
+              <a href="https://x.com/w736823064" target="_blank" rel="noopener" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                <span>@w736823064</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding: var(--spacing-6) 0;">
+      <div class="container">
+        <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+          <p data-i18n="footer.copyright">&copy; 2025 XNote. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.umd.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

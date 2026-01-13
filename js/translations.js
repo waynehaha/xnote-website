@@ -131,6 +131,37 @@ const translations = {
       'terms': 'Terms of Service',
       'email': 'Email',
       'copyright': '© 2025 XNote. All rights reserved.'
+    },
+
+    // Activate Page
+    'activate': {
+      'title': 'Purchase Successful!',
+      'subtitle': 'Thank you for purchasing XNote Pro. Please follow the steps below to activate.',
+      'step1': {
+        'title': 'Get Your License Key',
+        'desc1': 'Your License Key has been sent to the email used for payment.',
+        'desc2': 'Please check your inbox, the sender is Creem.io.',
+        'tip': '💡 If you haven\'t received the email, please check your spam folder, or click "View Order" on the Creem payment page.'
+      },
+      'step2': {
+        'title': 'Activate Extension',
+        'desc': 'Copy your License Key and follow these steps:',
+        's1': 'Open Twitter/X website',
+        's2': 'Click the XNote extension icon in your browser toolbar',
+        's3': 'Go to the "Data" tab',
+        's4': 'Enter your License Key at the top and click "Activate"'
+      },
+      'step3': {
+        'title': 'Start Using',
+        'desc': 'Once activated, you\'ll unlock all Pro features: unlimited notes, full import/export, and more.'
+      },
+      'cta': {
+        'twitter': 'Open Twitter',
+        'email': 'Check Email'
+      },
+      'contact': {
+        'title': 'Need help? Contact us'
+      }
     }
   },
   
@@ -261,6 +292,37 @@ const translations = {
       'terms': '服务条款',
       'email': '邮箱',
       'copyright': '© 2025 XNote. 保留所有权利。'
+    },
+
+    // Activate Page
+    'activate': {
+      'title': '购买成功！',
+      'subtitle': '感谢您购买 XNote Pro，请按以下步骤激活',
+      'step1': {
+        'title': '获取 License Key',
+        'desc1': '您的 License Key 已发送到付款时使用的邮箱。',
+        'desc2': '请检查收件箱，发件人为 Creem.io。',
+        'tip': '💡 如果没收到邮件，请检查垃圾邮件文件夹，或点击 Creem 支付页面的「查看订单」按钮。'
+      },
+      'step2': {
+        'title': '激活扩展',
+        'desc': '复制 License Key，按以下步骤激活：',
+        's1': '打开 Twitter/X 网站',
+        's2': '点击浏览器右上角的 XNote 扩展图标',
+        's3': '进入「数据管理」标签页',
+        's4': '在顶部输入 License Key，点击「激活」'
+      },
+      'step3': {
+        'title': '开始使用',
+        'desc': '激活成功后，您将解锁所有 Pro 功能：无限备注、完整导入导出等。'
+      },
+      'cta': {
+        'twitter': '打开 Twitter',
+        'email': '查看邮箱'
+      },
+      'contact': {
+        'title': '遇到问题？联系我们'
+      }
     }
   },
   
@@ -391,6 +453,37 @@ const translations = {
       'terms': '服務條款',
       'email': '郵箱',
       'copyright': '© 2025 XNote. 保留所有權利。'
+    },
+
+    // Activate Page
+    'activate': {
+      'title': '購買成功！',
+      'subtitle': '感謝您購買 XNote Pro，請按以下步驟激活',
+      'step1': {
+        'title': '獲取 License Key',
+        'desc1': '您的 License Key 已發送到付款時使用的郵箱。',
+        'desc2': '請檢查收件箱，發件人為 Creem.io。',
+        'tip': '💡 如果沒收到郵件，請檢查垃圾郵件文件夾，或點擊 Creem 支付頁面的「查看訂單」按鈕。'
+      },
+      'step2': {
+        'title': '激活擴展',
+        'desc': '複製 License Key，按以下步驟激活：',
+        's1': '打開 Twitter/X 網站',
+        's2': '點擊瀏覽器右上角的 XNote 擴展圖標',
+        's3': '進入「數據管理」標籤頁',
+        's4': '在頂部輸入 License Key，點擊「激活」'
+      },
+      'step3': {
+        'title': '開始使用',
+        'desc': '激活成功後，您將解鎖所有 Pro 功能：無限備註、完整導入導出等。'
+      },
+      'cta': {
+        'twitter': '打開 Twitter',
+        'email': '查看郵箱'
+      },
+      'contact': {
+        'title': '遇到問題？聯繫我們'
+      }
     }
   }
 };
