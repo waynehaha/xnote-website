@@ -21,11 +21,11 @@ const translations = {
     
     // Hero 区域
     'hero': {
-      'badge': 'Coming Soon',
+      'badge': 'Available Now',
       'title': 'XNote',
       'tagline': 'Add notes to Twitter users and better manage your social relationships',
       'description': 'Easily add personal notes, tags, and groups to any Twitter user, keeping your social network organized.',
-      'cta_wait': 'Stay Tuned',
+      'cta_install': 'Install to Chrome',
       'cta_learn': 'Learn More'
     },
     
@@ -65,21 +65,33 @@ const translations = {
         'feature3': 'Local storage',
         'feature4': 'Basic search',
         'feature5': 'Export 60 notes',
-        'cta': 'Stay Tuned'
+        'cta': 'Install Free'
+      },
+      'lifetime': {
+        'name': 'Lifetime',
+        'badge': 'Recommended',
+        'price': '$9.9',
+        'period': '/forever',
+        'feature1': 'Unlimited notes',
+        'feature2': 'Unlimited groups',
+        'feature3': 'Cloud sync',
+        'feature4': 'Advanced search',
+        'feature5': 'Full import/export',
+        'feature6': 'Batch operations',
+        'cta': 'Buy Once',
+        'note': 'One-time payment, use forever'
       },
       'pro': {
         'name': 'Pro',
-        'badge': 'Recommended',
         'price': '$4.50',
         'period': '/month',
         'feature1': 'Unlimited notes',
         'feature2': 'Unlimited groups',
         'feature3': 'Cloud sync',
         'feature4': 'Advanced search',
-        'feature5': 'Full export',
+        'feature5': 'Full import/export',
         'feature6': 'Batch operations',
-        'feature7': 'Note history',
-        'cta': 'Stay Tuned',
+        'cta': 'Upgrade Now',
         'note': 'Annual $29.99 (Save 17%)'
       }
     },
@@ -88,8 +100,8 @@ const translations = {
     'faq': {
       'title': 'FAQ',
       'q1': {
-        'question': 'When will XNote be released?',
-        'answer': 'We are actively developing. You can get the latest updates via email tingwei@tingwei.site or follow my X account @w736823064.'
+        'question': 'How do I install XNote?',
+        'answer': 'XNote is now available on the Chrome Web Store! Click the "Install Extension" button at the top of the page to install for free. If you have any questions, contact me via email tingwei@tingwei.site or X account @w736823064.'
       },
       'q2': {
         'question': 'What is the difference between Free and Pro versions?',
@@ -139,11 +151,11 @@ const translations = {
     
     // Hero 区域
     'hero': {
-      'badge': '即将推出',
+      'badge': '已上线',
       'title': 'XNote',
       'tagline': '为 Twitter 用户添加备注，更好地管理你的社交关系',
       'description': '轻松为任何 Twitter 用户添加个人备注、标签和分组，让你的社交网络井井有条。',
-      'cta_wait': '敬请期待',
+      'cta_install': '安装到 Chrome',
       'cta_learn': '了解更多'
     },
     
@@ -183,21 +195,33 @@ const translations = {
         'feature3': '本地存储',
         'feature4': '基础搜索',
         'feature5': '导出 60 条',
-        'cta': '敬请期待'
+        'cta': '免费安装'
+      },
+      'lifetime': {
+        'name': '终身版',
+        'badge': '推荐',
+        'price': '$9.9',
+        'period': '/永久',
+        'feature1': '无限备注',
+        'feature2': '无限分组',
+        'feature3': '云端同步',
+        'feature4': '高级搜索',
+        'feature5': '完整导入导出',
+        'feature6': '批量操作',
+        'cta': '一次购买',
+        'note': '永久使用，无需订阅'
       },
       'pro': {
         'name': 'Pro 版',
-        'badge': '推荐',
         'price': '$4.50',
         'period': '/月',
         'feature1': '无限备注',
         'feature2': '无限分组',
         'feature3': '云端同步',
         'feature4': '高级搜索',
-        'feature5': '完整导出',
+        'feature5': '完整导入导出',
         'feature6': '批量操作',
-        'feature7': '备注历史',
-        'cta': '敬请期待',
+        'cta': '立即升级',
         'note': '年付 $29.99（节省 17%）'
       }
     },
@@ -206,8 +230,8 @@ const translations = {
     'faq': {
       'title': '常见问题',
       'q1': {
-        'question': 'XNote 什么时候发布？',
-        'answer': '我们正在积极开发中，敬请期待。您可以通过邮箱 tingwei@tingwei.site 或关注我的 X 账号 @w736823064 获取最新进展。'
+        'question': '如何安装 XNote？',
+        'answer': 'XNote 已在 Chrome 应用商店上线！点击页面顶部的「安装插件」按钮即可免费安装。如有问题，可通过邮箱 tingwei@tingwei.site 或 X 账号 @w736823064 联系我。'
       },
       'q2': {
         'question': '免费版和 Pro 版有什么区别？',
@@ -257,11 +281,11 @@ const translations = {
     
     // Hero 区域
     'hero': {
-      'badge': '即將推出',
+      'badge': '已上線',
       'title': 'XNote',
       'tagline': '為 Twitter 用戶添加備註，更好地管理你的社交關係',
       'description': '輕鬆為任何 Twitter 用戶添加個人備註、標籤和分組，讓你的社交網絡井井有條。',
-      'cta_wait': '敬請期待',
+      'cta_install': '安裝到 Chrome',
       'cta_learn': '了解更多'
     },
     
@@ -301,21 +325,33 @@ const translations = {
         'feature3': '本地存儲',
         'feature4': '基礎搜索',
         'feature5': '導出 60 條',
-        'cta': '敬請期待'
+        'cta': '免費安裝'
+      },
+      'lifetime': {
+        'name': '終身版',
+        'badge': '推薦',
+        'price': '$9.9',
+        'period': '/永久',
+        'feature1': '無限備註',
+        'feature2': '無限分組',
+        'feature3': '雲端同步',
+        'feature4': '高級搜索',
+        'feature5': '完整導入導出',
+        'feature6': '批量操作',
+        'cta': '一次購買',
+        'note': '永久使用，無需訂閱'
       },
       'pro': {
         'name': 'Pro 版',
-        'badge': '推薦',
         'price': '$4.50',
         'period': '/月',
         'feature1': '無限備註',
         'feature2': '無限分組',
         'feature3': '雲端同步',
         'feature4': '高級搜索',
-        'feature5': '完整導出',
+        'feature5': '完整導入導出',
         'feature6': '批量操作',
-        'feature7': '備註歷史',
-        'cta': '敬請期待',
+        'cta': '立即升級',
         'note': '年付 $29.99（節省 17%）'
       }
     },
@@ -324,8 +360,8 @@ const translations = {
     'faq': {
       'title': '常見問題',
       'q1': {
-        'question': 'XNote 什麼時候發布？',
-        'answer': '我們正在積極開發中，敬請期待。您可以通過郵箱 tingwei@tingwei.site 或關注我的 X 賬號 @w736823064 獲取最新進展。'
+        'question': '如何安裝 XNote？',
+        'answer': 'XNote 已在 Chrome 應用商店上線！點擊頁面頂部的「安裝插件」按鈕即可免費安裝。如有問題，可通過郵箱 tingwei@tingwei.site 或 X 賬號 @w736823064 聯繫我。'
       },
       'q2': {
         'question': '免費版和 Pro 版有什麼區別？',

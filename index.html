@@ -20,7 +20,12 @@
   <meta name="twitter:description" content="为 Twitter 用户添加备注，更好地管理你的社交关系">
   
   <title>XNote - Twitter 用户备注工具</title>
-  
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
   
@@ -165,9 +170,27 @@
           </ul>
           <a href="https://chromewebstore.google.com/detail/xnote/hdiepfejigekmapjckgioomghplpfegn" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="pricing.free.cta">免费安装</a>
         </div>
-        
+
         <div class="pricing-card featured">
-          <div class="recommended-badge" data-i18n="pricing.pro.badge">推荐</div>
+          <div class="recommended-badge" data-i18n="pricing.lifetime.badge">推荐</div>
+          <h3 data-i18n="pricing.lifetime.name">终身版</h3>
+          <div class="price">
+            <span class="amount" data-i18n="pricing.lifetime.price">$9.9</span>
+            <span class="period" data-i18n="pricing.lifetime.period">/永久</span>
+          </div>
+          <ul class="features-list">
+            <li><span class="check">✓</span> <span data-i18n="pricing.lifetime.feature1">无限备注</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.lifetime.feature2">无限分组</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.lifetime.feature3">云端同步</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.lifetime.feature4">高级搜索</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.lifetime.feature5">完整导入导出</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.lifetime.feature6">批量操作</span></li>
+          </ul>
+          <a href="https://chromewebstore.google.com/detail/xnote/hdiepfejigekmapjckgioomghplpfegn" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="pricing.lifetime.cta">一次购买</a>
+          <p class="pricing-note" data-i18n="pricing.lifetime.note">永久使用，无需订阅</p>
+        </div>
+
+        <div class="pricing-card">
           <h3 data-i18n="pricing.pro.name">Pro 版</h3>
           <div class="price">
             <span class="amount" data-i18n="pricing.pro.price">$4.50</span>
@@ -178,9 +201,8 @@
             <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature2">无限分组</span></li>
             <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature3">云端同步</span></li>
             <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature4">高级搜索</span></li>
-            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature5">完整导出</span></li>
+            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature5">完整导入导出</span></li>
             <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature6">批量操作</span></li>
-            <li><span class="check">✓</span> <span data-i18n="pricing.pro.feature7">备注历史</span></li>
           </ul>
           <a href="https://chromewebstore.google.com/detail/xnote/hdiepfejigekmapjckgioomghplpfegn" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="pricing.pro.cta">立即升级</a>
           <p class="pricing-note" data-i18n="pricing.pro.note">年付 $29.99（节省 17%）</p>
@@ -303,6 +325,12 @@
         "price": "0",
         "priceCurrency": "USD",
         "name": "免费版"
+      },
+      {
+        "@type": "Offer",
+        "price": "9.9",
+        "priceCurrency": "USD",
+        "name": "终身版 - 永久"
       },
       {
         "@type": "Offer",

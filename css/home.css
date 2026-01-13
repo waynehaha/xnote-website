@@ -45,6 +45,41 @@
 .cta-buttons {
   display: flex;
   gap: var(--spacing-4);
+  align-items: center;
+}
+
+/* Chrome 安装按钮 */
+.btn-chrome {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  cursor: pointer;
+}
+
+.btn-chrome:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-chrome:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-chrome .chrome-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 .hero-image {
@@ -152,20 +187,21 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #9CA3AF; /* 未选中：深灰色 */
+  background: rgba(156, 163, 175, 0.5);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease-out;
   border: none;
 }
 
 .screenshot-dots .dot:hover {
-  background: #6B7280; /* 悬停：更深的灰色 */
-  transform: scale(1.2);
+  background: rgba(107, 114, 128, 0.8);
+  transform: scale(1.3);
 }
 
 .screenshot-dots .dot.active {
-  background: #D1D5DB; /* 选中：浅灰色 */
-  transform: scale(1.3);
+  background: rgba(209, 213, 219, 0.9);
+  transform: scale(1.4);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 /* Features Section */
@@ -203,12 +239,17 @@
   text-align: center;
   transition: all var(--transition-base);
   position: relative;
+  cursor: pointer;
 }
 
 .feature-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-xl);
   border-color: var(--primary-color);
+}
+
+.feature-card:active {
+  transform: translateY(-2px);
 }
 
 .feature-icon {
@@ -260,9 +301,9 @@
 
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-8);
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -274,11 +315,17 @@
   text-align: center;
   transition: all var(--transition-base);
   position: relative;
+  cursor: pointer;
 }
 
 .pricing-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-2xl);
+  border-color: var(--primary-color);
+}
+
+.pricing-card:active {
+  transform: translateY(-2px);
 }
 
 .pricing-card.featured {
@@ -421,6 +468,10 @@
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* 响应式 - 移动端 */
@@ -445,9 +496,15 @@
   .cta-buttons {
     flex-direction: column;
   }
-  
+
   .cta-buttons .btn {
     width: 100%;
+    justify-content: center;
+  }
+
+  .btn-chrome {
+    padding: 14px 24px;
+    font-size: 16px;
   }
   
   /* 移动端截图容器高度调整 */
@@ -481,5 +538,119 @@
   .pricing,
   .faq {
     padding: var(--spacing-16) 0;
+  }
+}
+
+/* 增强的视觉效果和微动画 */
+
+/* Hero 区域标题渐入动画 */
+.hero h1 {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.hero .tagline {
+  animation: slideInUp 0.7s ease-out;
+}
+
+.hero .description {
+  animation: slideInUp 0.8s ease-out;
+}
+
+.hero .cta-buttons {
+  animation: slideInUp 0.9s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pro 功能卡片特殊效果 */
+.feature-card.pro::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: var(--radius-xl);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.feature-card.pro:hover::before {
+  opacity: 1;
+}
+
+/* FAQ 问题 hover 时图标旋转 */
+.faq-question .icon {
+  display: inline-block;
+}
+
+/* 定价卡片的推荐徽章脉冲动画 */
+.recommended-badge {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* 按钮 loading 状态（未来可能使用） */
+.btn.loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.btn.loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 无障碍 - 尊重减少动画偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .hero h1,
+  .hero .tagline,
+  .hero .description,
+  .hero .cta-buttons {
+    animation: none;
+  }
+
+  .recommended-badge {
+    animation: none;
+  }
+
+  .feature-card.pro::before {
+    transition: none;
   }
 }
