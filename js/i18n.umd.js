@@ -19,7 +19,11 @@
             this.currentLanguage = 'en';
             this.translations = {};
             this.fallbackLanguage = 'en';
-            this.supportedLanguages = ['en', 'zh-CN', 'zh-TW'];
+            this.supportedLanguages = [
+                'en', 'zh-CN', 'zh-TW',  // 核心语言
+                'ja', 'ko', 'vi', 'th', 'id', 'ms',  // 亚洲语言
+                'fr', 'de', 'es', 'it', 'pt', 'nl'   // 欧洲语言
+            ];
             this.autoUpdateDOM = false;
             
             // 从 localStorage 加载保存的语言
@@ -111,27 +115,88 @@
          */
         detectSystemLanguage() {
             const browserLanguage = navigator.language || navigator.userLanguage;
-            
+            const langCode = browserLanguage.toLowerCase();
+
             // 简体中文
-            if (browserLanguage.startsWith('zh-CN') || 
-                browserLanguage.startsWith('zh-SG') ||
-                (browserLanguage === 'zh' && navigator.languages?.[0]?.includes('Hans'))) {
+            if (langCode.startsWith('zh-cn') ||
+                langCode.startsWith('zh-sg') ||
+                (langCode === 'zh' && navigator.languages?.[0]?.includes('Hans'))) {
                 return 'zh-CN';
             }
-            
+
             // 繁体中文
-            if (browserLanguage.startsWith('zh-TW') || 
-                browserLanguage.startsWith('zh-HK') ||
-                browserLanguage.startsWith('zh-MO') ||
-                (browserLanguage === 'zh' && navigator.languages?.[0]?.includes('Hant'))) {
+            if (langCode.startsWith('zh-tw') ||
+                langCode.startsWith('zh-hk') ||
+                langCode.startsWith('zh-mo') ||
+                (langCode === 'zh' && navigator.languages?.[0]?.includes('Hant'))) {
                 return 'zh-TW';
             }
-            
+
+            // 日语
+            if (langCode.startsWith('ja')) {
+                return 'ja';
+            }
+
+            // 韩语
+            if (langCode.startsWith('ko')) {
+                return 'ko';
+            }
+
+            // 越南语
+            if (langCode.startsWith('vi')) {
+                return 'vi';
+            }
+
+            // 泰语
+            if (langCode.startsWith('th')) {
+                return 'th';
+            }
+
+            // 印尼语
+            if (langCode.startsWith('id')) {
+                return 'id';
+            }
+
+            // 马来语
+            if (langCode.startsWith('ms')) {
+                return 'ms';
+            }
+
+            // 法语
+            if (langCode.startsWith('fr')) {
+                return 'fr';
+            }
+
+            // 德语
+            if (langCode.startsWith('de')) {
+                return 'de';
+            }
+
+            // 西班牙语
+            if (langCode.startsWith('es')) {
+                return 'es';
+            }
+
+            // 意大利语
+            if (langCode.startsWith('it')) {
+                return 'it';
+            }
+
+            // 葡萄牙语
+            if (langCode.startsWith('pt')) {
+                return 'pt';
+            }
+
+            // 荷兰语
+            if (langCode.startsWith('nl')) {
+                return 'nl';
+            }
+
             // 英语
-            if (browserLanguage.startsWith('en')) {
+            if (langCode.startsWith('en')) {
                 return 'en';
             }
-            
+
             // 默认英语
             return 'en';
         }
