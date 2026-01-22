@@ -59,6 +59,7 @@ const translations = {
     'pricing': {
       'title': 'Choose Your Plan',
       'subtitle': 'Start with free version, upgrade to Pro anytime to unlock more features',
+      'earlyBird': 'Early Bird Price',
       'free': {
         'name': 'Free',
         'price': '$0',
@@ -77,7 +78,7 @@ const translations = {
         'period': '/forever',
         'feature1': 'Unlimited notes',
         'feature2': 'Unlimited groups',
-        'feature3': 'Cloud sync',
+        'feature3': 'WebDAV Cloud Sync (Coming Soon)',
         'feature4': 'Advanced search',
         'feature5': 'Full import/export',
         'feature6': 'Batch operations',
@@ -86,16 +87,16 @@ const translations = {
       },
       'pro': {
         'name': 'Pro',
-        'price': '$4.50',
-        'period': '/month',
+        'price': '$1',
+        'period': '/first month',
+        'renewal': '$1.99 /month after',
         'feature1': 'Unlimited notes',
         'feature2': 'Unlimited groups',
-        'feature3': 'Cloud sync',
+        'feature3': 'WebDAV Cloud Sync (Coming Soon)',
         'feature4': 'Advanced search',
         'feature5': 'Full import/export',
         'feature6': 'Batch operations',
-        'cta': 'Upgrade Now',
-        'note': 'Annual $29.99 (Save 17%)'
+        'cta': 'Upgrade Now'
       }
     },
     
@@ -220,6 +221,7 @@ const translations = {
     'pricing': {
       'title': '选择适合你的方案',
       'subtitle': '从免费版开始，随时升级到 Pro 版解锁更多功能',
+      'earlyBird': '早鸟价格',
       'free': {
         'name': '免费版',
         'price': '$0',
@@ -238,7 +240,7 @@ const translations = {
         'period': '/永久',
         'feature1': '无限备注',
         'feature2': '无限分组',
-        'feature3': '云端同步',
+        'feature3': 'WebDAV 云同步（即将推出）',
         'feature4': '高级搜索',
         'feature5': '完整导入导出',
         'feature6': '批量操作',
@@ -247,16 +249,16 @@ const translations = {
       },
       'pro': {
         'name': 'Pro 版',
-        'price': '$4.50',
-        'period': '/月',
+        'price': '$1',
+        'period': '/首月',
+        'renewal': '$1.99 /次月起',
         'feature1': '无限备注',
         'feature2': '无限分组',
-        'feature3': '云端同步',
+        'feature3': 'WebDAV 云同步（即将推出）',
         'feature4': '高级搜索',
         'feature5': '完整导入导出',
         'feature6': '批量操作',
-        'cta': '立即升级',
-        'note': '年付 $29.99（节省 17%）'
+        'cta': '立即升级'
       }
     },
     
@@ -381,6 +383,7 @@ const translations = {
     'pricing': {
       'title': '選擇適合你的方案',
       'subtitle': '從免費版開始，隨時升級到 Pro 版解鎖更多功能',
+      'earlyBird': '早鳥價格',
       'free': {
         'name': '免費版',
         'price': '$0',
@@ -410,6 +413,7 @@ const translations = {
         'name': 'Pro 版',
         'price': '$4.50',
         'period': '/月',
+        'renewal': '$1.99 /次月起',
         'feature1': '無限備註',
         'feature2': '無限分組',
         'feature3': '雲端同步',
@@ -542,6 +546,7 @@ const translations = {
     'pricing': {
       'title': 'プランを選択',
       'subtitle': '無料版から始めて、いつでも Pro にアップグレード',
+      'earlyBird': 'アーリーバード価格',
       'free': {
         'name': '無料版',
         'price': '$0',
@@ -571,6 +576,7 @@ const translations = {
         'name': 'Pro 版',
         'price': '$4.50',
         'period': '/月',
+        'renewal': '$1.99 /翌月以降',
         'feature1': '無制限メモ',
         'feature2': '無制限グループ',
         'feature3': 'クラウド同期',
@@ -703,6 +709,7 @@ const translations = {
     'pricing': {
       'title': '플랜 선택',
       'subtitle': '무료 버전으로 시작하고, 언제든지 Pro로 업그레이드하세요',
+      'earlyBird': '얼리버드 가격',
       'free': {
         'name': '무료',
         'price': '$0',
@@ -732,6 +739,7 @@ const translations = {
         'name': 'Pro',
         'price': '$4.50',
         'period': '/월',
+        'renewal': '$1.99 /다음 달부터',
         'feature1': '무제한 메모',
         'feature2': '무제한 그룹',
         'feature3': '클라우드 동기화',
@@ -864,6 +872,7 @@ const translations = {
     'pricing': {
       'title': 'Chọn gói của bạn',
       'subtitle': 'Bắt đầu với phiên bản miễn phí, nâng cấp lên Pro bất cứ lúc nào',
+      'earlyBird': 'Giá Early Bird',
       'free': {
         'name': 'Miễn phí',
         'price': '$0',
@@ -893,6 +902,7 @@ const translations = {
         'name': 'Pro',
         'price': '$4.50',
         'period': '/tháng',
+        'renewal': '$1.99 /tháng sau',
         'feature1': 'Không giới hạn ghi chú',
         'feature2': 'Không giới hạn nhóm',
         'feature3': 'Đồng bộ đám mây',
@@ -1016,6 +1026,7 @@ const translations = {
     'pricing': {
       'title': 'เลือกแผนของคุณ',
       'subtitle': 'เริ่มต้นด้วยเวอร์ชันฟรี อัปเกรดเป็น Pro ได้ทุกเมื่อ',
+      'earlyBird': 'ราคา Early Bird',
       'free': {
         'name': 'ฟรี',
         'price': '$0',
@@ -1045,6 +1056,7 @@ const translations = {
         'name': 'Pro',
         'price': '$4.50',
         'period': '/เดือน',
+        'renewal': '$1.99 /เดือนถัดไป',
         'feature1': 'บันทึกไม่จำกัด',
         'feature2': 'กลุ่มไม่จำกัด',
         'feature3': 'ซิงค์คลาวด์',
@@ -1162,6 +1174,7 @@ const translations = {
     'pricing': {
       'title': 'Pilih Paket Anda',
       'subtitle': 'Mulai dengan versi gratis, tingkatkan ke Pro kapan saja',
+      'earlyBird': 'Harga Early Bird',
       'free': {
         'name': 'Gratis',
         'price': '$0',
@@ -1191,6 +1204,7 @@ const translations = {
         'name': 'Pro',
         'price': '$4.50',
         'period': '/bulan',
+        'renewal': '$1.99 /bulan berikutnya',
         'feature1': 'Catatan tidak terbatas',
         'feature2': 'Grup tidak terbatas',
         'feature3': 'Sinkronisasi cloud',
@@ -1308,6 +1322,7 @@ const translations = {
     'pricing': {
       'title': 'Pilih Pelan Anda',
       'subtitle': 'Mulakan dengan versi percuma, naik taraf ke Pro bila-bila masa',
+      'earlyBird': 'Harga Early Bird',
       'free': {
         'name': 'Percuma',
         'price': '$0',
@@ -1337,6 +1352,7 @@ const translations = {
         'name': 'Pro',
         'price': '$4.50',
         'period': '/bulan',
+        'renewal': '$1.99 /bulan seterusnya',
         'feature1': 'Nota tanpa had',
         'feature2': 'Kumpulan tanpa had',
         'feature3': 'Sinkronisasi awan',
@@ -1454,6 +1470,7 @@ const translations = {
     'pricing': {
       'title': 'Choisissez votre forfait',
       'subtitle': 'Commencez avec la version gratuite, passez à Pro à tout moment',
+      'earlyBird': 'Prix Early Bird',
       'free': {
         'name': 'Gratuit',
         'price': '0 $',
@@ -1483,6 +1500,7 @@ const translations = {
         'name': 'Pro',
         'price': '4,50 $',
         'period': '/mois',
+        'renewal': '1,99 $ /mois suivants',
         'feature1': 'Notes illimitées',
         'feature2': 'Groupes illimités',
         'feature3': 'Synchronisation cloud',
@@ -1600,6 +1618,7 @@ const translations = {
     'pricing': {
       'title': 'Wählen Sie Ihren Plan',
       'subtitle': 'Beginnen Sie mit der kostenlosen Version, upgraden Sie jederzeit auf Pro',
+      'earlyBird': 'Early Bird Preis',
       'free': {
         'name': 'Kostenlos',
         'price': '0 $',
@@ -1629,6 +1648,7 @@ const translations = {
         'name': 'Pro',
         'price': '4,50 $',
         'period': '/Monat',
+        'renewal': '1,99 $ /ab dem nächsten Monat',
         'feature1': 'Unbegrenzte Notizen',
         'feature2': 'Unbegrenzte Gruppen',
         'feature3': 'Cloud-Synchronisierung',
@@ -1746,6 +1766,7 @@ const translations = {
     'pricing': {
       'title': 'Elige tu plan',
       'subtitle': 'Comienza con la versión gratuita, actualiza a Pro cuando quieras',
+      'earlyBird': 'Precio Early Bird',
       'free': {
         'name': 'Gratis',
         'price': '0 $',
@@ -1775,6 +1796,7 @@ const translations = {
         'name': 'Pro',
         'price': '4,50 $',
         'period': '/mes',
+        'renewal': '1,99 $ /mes siguiente',
         'feature1': 'Notas ilimitadas',
         'feature2': 'Grupos ilimitados',
         'feature3': 'Sincronización en la nube',
@@ -1892,6 +1914,7 @@ const translations = {
     'pricing': {
       'title': 'Scegli il tuo piano',
       'subtitle': 'Inizia con la versione gratuita, passa a Pro quando vuoi',
+      'earlyBird': 'Prezzo Early Bird',
       'free': {
         'name': 'Gratuito',
         'price': '0 $',
@@ -1921,6 +1944,7 @@ const translations = {
         'name': 'Pro',
         'price': '4,50 $',
         'period': '/mese',
+        'renewal': '1,99 $ /mese successivo',
         'feature1': 'Note illimitate',
         'feature2': 'Gruppi illimitati',
         'feature3': 'Sincronizzazione cloud',
@@ -2038,6 +2062,7 @@ const translations = {
     'pricing': {
       'title': 'Escolha seu plano',
       'subtitle': 'Comece com a versão gratuita, atualize para Pro quando quiser',
+      'earlyBird': 'Preço Early Bird',
       'free': {
         'name': 'Grátis',
         'price': '$ 0',
@@ -2067,6 +2092,7 @@ const translations = {
         'name': 'Pro',
         'price': '$ 4,50',
         'period': '/mês',
+        'renewal': '$ 1,99 /mês seguinte',
         'feature1': 'Notas ilimitadas',
         'feature2': 'Grupos ilimitados',
         'feature3': 'Sincronização na nuvem',
@@ -2184,6 +2210,7 @@ const translations = {
     'pricing': {
       'title': 'Kies je abonnement',
       'subtitle': 'Begin met de gratis versie, upgrade naar Pro wanneer je wilt',
+      'earlyBird': 'Early Bird Prijs',
       'free': {
         'name': 'Gratis',
         'price': '$ 0',
@@ -2213,6 +2240,7 @@ const translations = {
         'name': 'Pro',
         'price': '$ 4,50',
         'period': '/maand',
+        'renewal': '$ 1,99 /volgende maand',
         'feature1': 'Onbeperkte notities',
         'feature2': 'Onbeperkte groepen',
         'feature3': 'Cloudsynchronisatie',
