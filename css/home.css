@@ -354,7 +354,7 @@
 }
 
 .price {
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-2);
 }
 
 .price .amount {
@@ -374,7 +374,7 @@
 }
 
 .features-list li {
-  padding: var(--spacing-3) 0;
+  padding: var(--spacing-2) 0;
   color: var(--text-secondary);
   display: flex;
   align-items: center;
@@ -394,6 +394,32 @@
   margin-top: var(--spacing-4);
   font-size: var(--text-sm);
   color: var(--text-tertiary);
+}
+
+.original-price {
+  font-size: var(--text-xl);
+  color: var(--text-tertiary);
+  text-decoration: line-through;
+  margin-right: var(--spacing-2);
+}
+
+.renewal-price {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-top: calc(var(--spacing-2) * -1);
+  margin-bottom: var(--spacing-2);
+}
+
+.early-bird-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b6b, #ffa502);
+  color: white;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  padding: var(--spacing-1) var(--spacing-3);
+  border-radius: var(--radius-full);
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
 }
 
 /* FAQ Section */

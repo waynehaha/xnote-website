@@ -1,6 +1,46 @@
 // 首页交互功能
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 月订阅购买按钮（带首月优惠）
+  const monthlyBtn = document.getElementById('monthly-purchase-btn');
+  if (monthlyBtn) {
+    monthlyBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+
+      // 显示加载状态
+      const originalText = monthlyBtn.textContent;
+      monthlyBtn.textContent = 'Loading...';
+      monthlyBtn.style.pointerEvents = 'none';
+
+      try {
+        const response = await fetch('https://xnote-api.vercel.app/api/create-checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            product: 'monthly',
+            discountCode: 'FIRST50'
+          })
+        });
+
+        const data = await response.json();
+
+        if (data.success && data.checkoutUrl) {
+          window.location.href = data.checkoutUrl;
+        } else {
+          // 如果 API 失败，回退到静态链接
+          window.open('https://www.creem.io/payment/prod_TsKi0EhOWIZhRgRGP5gxJ', '_blank');
+        }
+      } catch (error) {
+        console.error('Checkout error:', error);
+        // 网络错误时回退到静态链接
+        window.open('https://www.creem.io/payment/prod_TsKi0EhOWIZhRgRGP5gxJ', '_blank');
+      } finally {
+        monthlyBtn.textContent = originalText;
+        monthlyBtn.style.pointerEvents = 'auto';
+      }
+    });
+  }
+
   // FAQ 手风琴效果
   const faqItems = document.querySelectorAll('.faq-item');
   
