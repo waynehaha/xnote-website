@@ -37,152 +37,64 @@
   </nav>
 
   <!-- 主内容 -->
-  <main class="legal-page">
+  <main class="legal-page" style="overflow-wrap: anywhere;">
     <div class="container">
-      <h1>隐私政策</h1>
-      <p class="last-updated">最后更新：2025年12月16日</p>
-
+      <h1>隐私政策 / Privacy Policy</h1>
+      <p class="last-updated">最后更新：2026 年 11 月 12 日 · Last updated: November 12, 2026.</p>
+      <p><a href="#privacy-zh">简体中文</a> · <a href="#privacy-en">English</a></p>
+      <div id="privacy-zh" lang="zh-CN" style="scroll-margin-top: 96px;">
       <section>
-        <h2>1. 简介</h2>
-        <p>欢迎使用 XNote（以下简称"我们"或"本插件"）。我们非常重视您的隐私和数据安全。本隐私政策说明了我们如何收集、使用、存储和保护您的个人信息。</p>
-        <p>使用 XNote 即表示您同意本隐私政策中描述的做法。如果您不同意本政策，请不要使用本插件。</p>
+        <h2>1. 关于 XNote</h2>
+        <p>XNote 帮助您为 X/Twitter 用户添加个人备注和分组。本政策说明 XNote 扩展本身如何处理信息。</p>
       </section>
-
       <section>
-        <h2>2. 我们收集的信息</h2>
-        
-        <h3>2.1 您主动提供的信息</h3>
-        <ul>
-          <li><strong>备注数据</strong>：您为 Twitter 用户添加的备注、标签和分组信息</li>
-          <li><strong>账户信息</strong>（Pro 版）：用于云端同步的 WebDAV 服务器配置信息</li>
-          <li><strong>支付信息</strong>（Pro 版）：通过第三方支付服务商 Creem.io 处理，我们不直接存储您的支付信息</li>
-        </ul>
-
-        <h3>2.2 自动收集的信息</h3>
-        <ul>
-          <li><strong>使用数据</strong>：插件版本、浏览器类型、操作系统等基本技术信息</li>
-          <li><strong>错误日志</strong>：用于诊断和修复技术问题的匿名错误报告</li>
-        </ul>
-
-        <h3>2.3 我们不收集的信息</h3>
-        <ul>
-          <li>您的 Twitter 账号密码</li>
-          <li>您的 Twitter 私信内容</li>
-          <li>您的浏览历史</li>
-          <li>与 XNote 功能无关的任何个人信息</li>
-        </ul>
+        <h2>2. 在设备上保存的信息</h2>
+        <p>为提供功能，XNote 使用浏览器本地存储保存您创建的备注、相关 X/Twitter 用户标识和显示名称、分组、排序、偏好设置，以及 Pro 许可证和验证状态。</p>
+        <p>启用 WebDAV 时，您填写的服务器地址、用户名、密码或应用专用密码也会保存在本机。恢复备份前，扩展会保存最近一次恢复前的备注、分组和顺序副本。连接密码使用浏览器本地存储保存，不应将其理解为由 XNote 另行加密保管。</p>
       </section>
-
       <section>
-        <h2>3. 信息的使用方式</h2>
-        <p>我们收集的信息仅用于以下目的：</p>
-        <ul>
-          <li><strong>提供服务</strong>：存储和同步您的备注数据</li>
-          <li><strong>改进产品</strong>：分析使用模式以优化功能和性能</li>
-          <li><strong>技术支持</strong>：诊断和解决技术问题</li>
-          <li><strong>通信</strong>：发送重要的产品更新和安全通知</li>
-        </ul>
-        <p>我们不会将您的数据用于广告目的，也不会出售给第三方。</p>
+        <h2>3. 手动 WebDAV 备份</h2>
+        <p>WebDAV 可将备注、分组和分组顺序备份到您指定的存储服务或 NAS。操作由您主动发起，不会在后台自动同步。</p>
+        <p>认证请求会将您填写的用户名和密码发送到您指定的 WebDAV 服务器。备份文件只包含备注、分组、顺序和必要格式信息，不包含连接密码、许可证或 Pro 账户状态。我们不运营用于存放这些备份的 WebDAV 服务器，也不会将备份转存到开发者的服务器。</p>
+        <p>首次使用时，浏览器会请求访问您填写的服务器域名或 IP。可通过浏览器的扩展管理页面撤销相应站点权限。</p>
       </section>
-
       <section>
-        <h2>4. 数据存储和安全</h2>
-        
-        <h3>4.1 免费版</h3>
-        <ul>
-          <li>所有数据存储在您的本地浏览器中（Chrome Storage API）</li>
-          <li>我们无法访问您的本地数据</li>
-          <li>数据不会自动上传到任何服务器</li>
-        </ul>
-
-        <h3>4.2 Pro 版</h3>
-        <ul>
-          <li>使用 WebDAV 协议进行云端同步</li>
-          <li>您可以选择自己信任的 WebDAV 服务提供商（如坚果云、Nextcloud 等）</li>
-          <li>我们不运营 WebDAV 服务器，不存储您的同步数据</li>
-          <li>所有传输数据使用 HTTPS 加密</li>
-        </ul>
-
-        <h3>4.3 安全措施</h3>
-        <ul>
-          <li>使用行业标准的加密技术保护数据传输</li>
-          <li>定期进行安全审计和更新</li>
-          <li>限制对用户数据的访问权限</li>
-        </ul>
+        <h2>4. 传输安全</h2>
+        <p>建议使用 HTTPS 服务器，以加密传输认证信息和备份。若您自行选择 HTTP 服务，包括局域网 NAS，认证信息与备注会以未加密方式传输。XNote 会在连接表单中明确提示这一点。扩展不会自动跟随 WebDAV 地址的重定向，请填写最终服务地址。</p>
       </section>
-
       <section>
-        <h2>5. 第三方服务</h2>
-        
-        <h3>5.1 Creem.io（支付处理）</h3>
-        <p>我们使用 Creem.io 处理 Pro 版订阅付款。Creem.io 会收集和处理您的支付信息，受其自身隐私政策约束。我们不直接访问或存储您的完整支付信息。</p>
-
-        <h3>5.2 WebDAV 服务提供商（Pro 版）</h3>
-        <p>如果您选择使用云端同步功能，您的数据将存储在您选择的 WebDAV 服务提供商处。这些服务提供商有各自的隐私政策，请您自行了解。</p>
+        <h2>5. Pro 验证与支付</h2>
+        <p>使用许可证激活或验证时，XNote 会通过 HTTPS 向 <code>https://xnote-api.vercel.app/api/validate-license</code> 发送许可证密钥及固定客户端标识，以确认激活状态。既有 Pro 账户验证流程可能使用浏览器个人资料邮箱，并向配置的账户验证服务查询 Pro 状态。这些验证请求不包含您的备注或 WebDAV 密码。</p>
+        <p>购买 Pro 会跳转到外部网站，由相关支付服务处理付款；我们不在扩展内收集完整银行卡信息。支付服务按其自身隐私政策处理相关信息。</p>
       </section>
-
       <section>
-        <h2>6. 数据保留</h2>
-        <ul>
-          <li><strong>免费版</strong>：数据保留在您的本地浏览器中，直到您卸载插件或清除浏览器数据</li>
-          <li><strong>Pro 版</strong>：云端数据保留在您的 WebDAV 服务器上，由您自行管理</li>
-          <li><strong>账户数据</strong>：如果您取消订阅，我们会在 30 天后删除您的账户信息</li>
-        </ul>
+        <h2>6. 数据使用与共享</h2>
+        <p>上述信息用于备注管理、用户主动选择的备份与恢复，以及 Pro 权益验证。XNote 不将这些信息用于广告定向、出售、无关用途或信用评估。</p>
+        <p>对于通过 Google API 获得的信息，我们遵守 Chrome Web Store 用户数据政策及其 Limited Use 要求，仅将其用于已披露的用户功能。</p>
+        <p>本版本没有实现将本地控制台错误日志或使用统计自动上传给开发者的遥测流程。控制台日志不等同于自动提交错误报告。</p>
       </section>
-
       <section>
-        <h2>7. 您的权利</h2>
-        <p>根据适用的数据保护法律，您拥有以下权利：</p>
-        <ul>
-          <li><strong>访问权</strong>：查看我们持有的关于您的数据</li>
-          <li><strong>更正权</strong>：更正不准确的个人信息</li>
-          <li><strong>删除权</strong>：要求删除您的个人数据</li>
-          <li><strong>导出权</strong>：以结构化格式导出您的数据</li>
-          <li><strong>反对权</strong>：反对某些数据处理活动</li>
-        </ul>
-        <p>要行使这些权利，请通过 tingwei@tingwei.site 联系我们。</p>
+        <h2>7. 数据保留与控制</h2>
+        <p>本地信息通常保留到您修改配置、清除扩展存储或卸载扩展为止。恢复前副本仅保留最近一次。服务器上的备份由您和所选服务管理，卸载扩展不会自动删除服务器文件。</p>
+        <p>您可以使用导出功能取得备注备份，通过浏览器管理扩展权限，或清除、卸载扩展以移除设备上的扩展数据。备份恢复采用合并方式，保留本地独有内容。第三方许可证、账户和支付服务的记录按相应服务规则保留。</p>
       </section>
-
       <section>
-        <h2>8. 儿童隐私</h2>
-        <p>XNote 不面向 13 岁以下的儿童。我们不会故意收集 13 岁以下儿童的个人信息。如果您发现我们收集了儿童的信息，请立即联系我们，我们将采取措施删除该信息。</p>
+        <h2>8. 其他信息与联系</h2>
+        <p>XNote 不要求您的 X/Twitter 登录密码，也不请求私信内容作为备注或备份数据。本扩展不面向 13 岁以下儿童。</p>
+        <p>如有隐私问题，请联系 <code>tingwei@tingwei.site</code>，或通过 X 账号 <code>@w736823064</code> 联系开发者。政策有实质变更时，将在官网更新说明和日期。</p>
       </section>
-
-      <section>
-        <h2>9. 国际数据传输</h2>
-        <p>您的信息可能会被传输到您所在国家/地区以外的地方进行处理。我们会采取适当措施确保您的数据在传输过程中得到充分保护，符合适用的数据保护法律。</p>
-      </section>
-
-      <section>
-        <h2>10. Cookie 和跟踪技术</h2>
-        <p>XNote 插件本身不使用 Cookie。但是，我们的官方网站可能使用基本的分析工具来了解访问者如何使用网站。您可以通过浏览器设置管理 Cookie 偏好。</p>
-      </section>
-
-      <section>
-        <h2>11. 隐私政策的变更</h2>
-        <p>我们可能会不时更新本隐私政策。重大变更时，我们会通过插件通知或电子邮件通知您。继续使用 XNote 即表示您接受更新后的隐私政策。</p>
-        <p>我们建议您定期查看本页面以了解最新的隐私实践。</p>
-      </section>
-
-      <section>
-        <h2>12. 联系我们</h2>
-        <p>如果您对本隐私政策有任何疑问、意见或投诉，请通过以下方式联系我们：</p>
-        <ul>
-          <li><strong>邮箱</strong>：tingwei@tingwei.site</li>
-          <li><strong>X (Twitter)</strong>：<a href="https://x.com/w736823064" target="_blank" rel="noopener">@w736823064</a></li>
-        </ul>
-        <p>我们会在收到您的请求后 30 天内回复。</p>
-      </section>
-
-      <section>
-        <h2>13. 适用法律</h2>
-        <p>本隐私政策受您所在司法管辖区的适用法律管辖。我们致力于遵守所有适用的数据保护法律，包括但不限于：</p>
-        <ul>
-          <li>欧盟通用数据保护条例（GDPR）</li>
-          <li>加州消费者隐私法案（CCPA）</li>
-          <li>其他适用的地区数据保护法律</li>
-        </ul>
-      </section>
+      </div>
+      <div id="privacy-en" lang="en" style="scroll-margin-top: 96px;">
+      <h2>Privacy Policy (English)</h2>
+      <section><p>XNote helps you organize X/Twitter accounts using personal notes and groups. This policy describes data handling by the extension itself.</p></section>
+      <section><p><strong>Local storage.</strong> XNote stores your notes, related X/Twitter account identifiers and display names, groups, ordering, preferences, and Pro license and verification state in your browser’s local storage. If you configure WebDAV, its server URL, username and password or app password are also stored on your device. The latest pre-restore copy of notes, groups and ordering is retained locally. XNote does not separately encrypt credentials stored through browser local storage.</p></section>
+      <section><p><strong>Manual WebDAV backup.</strong> You choose the server and initiate backup or restore. There is no automatic background synchronization. Authentication sends the supplied credentials to your configured WebDAV server. Backup files contain notes, groups, their order and required format metadata; they exclude connection passwords, licenses and Pro account state. We do not host or copy these WebDAV backups to a developer-operated backup server. The browser requests access to the server hostname or IP when you enable the connection. You can revoke site access through extension settings.</p></section>
+      <section><p><strong>Transport.</strong> HTTPS is recommended to encrypt credentials and backup data in transit. If you choose HTTP, including for a local NAS, credentials and notes are transmitted without encryption. The connection form discloses this. WebDAV redirects are rejected; configure the final server URL.</p></section>
+      <section><p><strong>Pro and payments.</strong> License activation and validation send your license key and a fixed client label over HTTPS to <code>https://xnote-api.vercel.app/api/validate-license</code>. The existing account-based Pro verification flow may obtain your browser profile email and query the configured account verification service. These requests do not include your notes or WebDAV password. Purchases open an external website; the relevant payment provider processes payment information under its own privacy policy. The extension does not collect full card details.</p></section>
+      <section><p><strong>Use and sharing.</strong> Data is used for note management, requested backup and restore, and Pro verification. We do not sell it or use it for advertising, unrelated purposes or credit decisions. Information received from Google APIs is used only for disclosed user-facing features and in accordance with the Chrome Web Store User Data Policy, including its Limited Use requirements. This version does not implement automatic upload of local console errors or usage analytics to the developer.</p></section>
+      <section><p><strong>Retention and control.</strong> Local information remains until you change the configuration, clear extension storage or uninstall the extension. Only the latest pre-restore copy is retained. Server backups are managed by you and your chosen provider; uninstalling does not delete them. You can export notes and manage browser permissions. Restore merges data and keeps local-only items. License, account verification and payment services retain their records under their respective policies.</p></section>
+      <section><p><strong>Other information.</strong> XNote does not require your X/Twitter password or request private-message contents as note or backup data. The extension is not directed to children under 13. Contact <code>tingwei@tingwei.site</code> or <code>@w736823064</code> with privacy questions. Material changes will be reflected on the website with an updated date.</p></section>
+      </div>
     </div>
   </main>
 
